@@ -51,5 +51,10 @@ namespace Wages
         {
 
         }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

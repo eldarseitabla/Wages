@@ -125,6 +125,7 @@
             clearButton.TabIndex = 9;
             clearButton.Text = "Clear";
             clearButton.UseVisualStyleBackColor = true;
+            clearButton.Click += clearButton_Click;
             // 
             // Wages
             // 
