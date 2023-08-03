@@ -28,12 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            noOfHoursWorkedLabel = new Label();
+            numericUpDown1 = new NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            SuspendLayout();
+            // 
+            // noOfHoursWorkedLabel
+            // 
+            noOfHoursWorkedLabel.AutoSize = true;
+            noOfHoursWorkedLabel.Location = new Point(176, 101);
+            noOfHoursWorkedLabel.Name = "noOfHoursWorkedLabel";
+            noOfHoursWorkedLabel.Size = new Size(185, 25);
+            noOfHoursWorkedLabel.TabIndex = 0;
+            noOfHoursWorkedLabel.Text = "No. Of Hours Worked";
+            noOfHoursWorkedLabel.Click += noOfHoursWorkedLabel_Click;
+            // 
+            // numericUpDown1
+            // 
+            numericUpDown1.Location = new Point(416, 95);
+            numericUpDown1.Name = "numericUpDown1";
+            numericUpDown1.Size = new Size(116, 31);
+            numericUpDown1.TabIndex = 1;
+            // 
+            // Wages
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Text = "Form1";
+            Controls.Add(numericUpDown1);
+            Controls.Add(noOfHoursWorkedLabel);
+            Name = "Wages";
+            Text = "Wapes";
+            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label noOfHoursWorkedLabel;
+        private NumericUpDown numericUpDown1;
     }
 }
