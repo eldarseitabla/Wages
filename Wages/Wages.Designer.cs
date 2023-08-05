@@ -30,15 +30,15 @@
         {
             noOfHoursWorkedLabel = new Label();
             noOfHoursWorkedNumericUpDown = new NumericUpDown();
-            selectHoursNumericUpDown = new NumericUpDown();
-            selectHoursLabel = new Label();
+            selectOvertimeHoursNumericUpDown = new NumericUpDown();
+            selectOvertimeHoursLabel = new Label();
             overtimeCheckBox = new CheckBox();
             selectHourlyRateLabel = new Label();
             selectHourlyRateComboBox = new ComboBox();
             calculateButton = new Button();
             clearButton = new Button();
             ((System.ComponentModel.ISupportInitialize)noOfHoursWorkedNumericUpDown).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)selectHoursNumericUpDown).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)selectOvertimeHoursNumericUpDown).BeginInit();
             SuspendLayout();
             // 
             // noOfHoursWorkedLabel
@@ -59,23 +59,23 @@
             noOfHoursWorkedNumericUpDown.TabIndex = 1;
             noOfHoursWorkedNumericUpDown.ValueChanged += noOfHoursWorkedNumericUpDown_ValueChanged;
             // 
-            // selectHoursNumericUpDown
+            // selectOvertimeHoursNumericUpDown
             // 
-            selectHoursNumericUpDown.Location = new Point(425, 163);
-            selectHoursNumericUpDown.Name = "selectHoursNumericUpDown";
-            selectHoursNumericUpDown.Size = new Size(92, 31);
-            selectHoursNumericUpDown.TabIndex = 3;
-            selectHoursNumericUpDown.ValueChanged += selectHoursNumericUpDown_ValueChanged;
+            selectOvertimeHoursNumericUpDown.Location = new Point(425, 163);
+            selectOvertimeHoursNumericUpDown.Name = "selectOvertimeHoursNumericUpDown";
+            selectOvertimeHoursNumericUpDown.Size = new Size(92, 31);
+            selectOvertimeHoursNumericUpDown.TabIndex = 3;
+            selectOvertimeHoursNumericUpDown.ValueChanged += selectOvertimeHoursNumericUpDown_ValueChanged;
             // 
-            // selectHoursLabel
+            // selectOvertimeHoursLabel
             // 
-            selectHoursLabel.AutoSize = true;
-            selectHoursLabel.Location = new Point(308, 166);
-            selectHoursLabel.Name = "selectHoursLabel";
-            selectHoursLabel.Size = new Size(111, 25);
-            selectHoursLabel.TabIndex = 4;
-            selectHoursLabel.Text = "Select Hours";
-            selectHoursLabel.Click += selectHoursLabel_Click;
+            selectOvertimeHoursLabel.AutoSize = true;
+            selectOvertimeHoursLabel.Location = new Point(308, 166);
+            selectOvertimeHoursLabel.Name = "selectOvertimeHoursLabel";
+            selectOvertimeHoursLabel.Size = new Size(111, 25);
+            selectOvertimeHoursLabel.TabIndex = 4;
+            selectOvertimeHoursLabel.Text = "Select Hours";
+            selectOvertimeHoursLabel.Click += selectOvertimeHoursLabel_Click;
             // 
             // overtimeCheckBox
             // 
@@ -137,15 +137,15 @@
             Controls.Add(selectHourlyRateComboBox);
             Controls.Add(selectHourlyRateLabel);
             Controls.Add(overtimeCheckBox);
-            Controls.Add(selectHoursLabel);
-            Controls.Add(selectHoursNumericUpDown);
+            Controls.Add(selectOvertimeHoursLabel);
+            Controls.Add(selectOvertimeHoursNumericUpDown);
             Controls.Add(noOfHoursWorkedNumericUpDown);
             Controls.Add(noOfHoursWorkedLabel);
             Name = "Wages";
             Text = "Wapes";
             Load += Wages_Load;
             ((System.ComponentModel.ISupportInitialize)noOfHoursWorkedNumericUpDown).EndInit();
-            ((System.ComponentModel.ISupportInitialize)selectHoursNumericUpDown).EndInit();
+            ((System.ComponentModel.ISupportInitialize)selectOvertimeHoursNumericUpDown).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -154,8 +154,8 @@
 
         private Label noOfHoursWorkedLabel;
         private NumericUpDown noOfHoursWorkedNumericUpDown;
-        private NumericUpDown selectHoursNumericUpDown;
-        private Label selectHoursLabel;
+        private NumericUpDown selectOvertimeHoursNumericUpDown;
+        private Label selectOvertimeHoursLabel;
         private CheckBox overtimeCheckBox;
         private Label selectHourlyRateLabel;
         private ComboBox selectHourlyRateComboBox;
